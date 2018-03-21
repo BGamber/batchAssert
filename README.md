@@ -1,5 +1,5 @@
 # batchAssert
-Assert testing module for explicit pass/fail console output, with optional AssertException bypass.
+Assert testing module for explicit pass/fail console output, with optional AssertionError bypass.
  * _Props to @SagePadawan for helping me out with this!_
 
 ## What is batchAssert?
@@ -18,4 +18,4 @@ let testBatch = [
  batchAssert will log each test's success or failure to the console, and AssertionErrors will still be thrown by any test that fails. If you prefer to bypass that behavior...
  
  `batchAssert.testAll(testBatch, false)` <br>
- ... passing _false_ as a second parameter will catch the Exception, allowing all remaining tests to still execute. The console message for a failed test will print the index of the failed test, as well as the message provided in the test object.
+ ... passing _false_ as a second parameter will catch the error, allowing all remaining tests to still execute. The console message for a failed test will print the index of the failed test, as well as the message provided in the test object.
