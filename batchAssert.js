@@ -4,7 +4,6 @@ let MissingArgumentError = new Error("One or more arguments missing from test ob
 
 let assertTest = function ({ test, result, message }, index) {
   if (test === undefined ||
-    result === undefined ||
     message === undefined) {
     throw MissingArgumentError;
   }
