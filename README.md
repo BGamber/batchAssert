@@ -24,4 +24,4 @@ let testBatch = [
  ... passing _false_ as a second parameter will catch the error, allowing all remaining tests to still execute. The console message for a failed test will print the index of the failed test, as well as the message provided in the test object.
 
 ### batchAssert threw a 'MissingArgumentError'! What?!
-To help you get the most out of your tests, if you leave out a **test**, **result**, or **message** property in any "test" object then batchAssert throws **MissingArgumentError** to let you know that your test was incomplete.
+To help you get the most out of your tests, if you leave out a **test**, or **message** property in any "test" object then batchAssert throws **MissingArgumentError** to let you know that your test was incomplete. Double-check all of the tests in your list and make sure you provide values for all of them.
