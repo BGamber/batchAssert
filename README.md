@@ -10,6 +10,9 @@ let testBatch = [
   { test: <equation>, result: <expected answer>, message: <Message to display on test failure> }
 ];
 ```
+* **equation** can be any *value* or *function which returns a value*.
+* **result** can be any *value* which **equation** is **expected to equal**.
+* **message** is a *string* that will be printed if the test **fails**.
 
 `batchAssert.testAll(testBatch)` <br>
  will execute an assert test for every object in the list, in the following manner:
