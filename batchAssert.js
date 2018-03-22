@@ -1,13 +1,16 @@
 const assert = require('assert');
 
-let MissingArgumentError = new Error("One or more arguments missing from test object");
+let MissingTestError = new Error("Test was not defined in test object");
 
 let assertTest = function ({ test, result, message }, index) {
-  if (test === undefined ||
-    message === undefined) {
-    throw MissingArgumentError;
+  if (test === undefined) {
+    throw MissingTestError;
   }
-  assert.deepStrictEqual(test, result, message);
+  if (message) {
+    assert.deepStrictEqual(test, result, message);
+  } else {
+    assert.deepStrictEqual(test, result);
+  };
   console.log(`Test ${index} passed.`);
 }
 
@@ -19,7 +22,8 @@ let testAll = function (batch, throwOnFail = true) {
       try {
         assertTest(test, index);
       } catch (AssertionError) {
-        console.log(`Test ${index} FAILED: ${test.message}`)
+        let defaultMessage = `${AssertionError.actual} ${AssertionError.operator} ${AssertionError.expected}`
+        console.log(`Test ${index} FAILED: ${(test.message ? test.message : defaultMessage)}`)
       }
     });
   };
