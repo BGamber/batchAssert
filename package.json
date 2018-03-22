@@ -1,6 +1,6 @@
 {
   "name": "batchassert",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Assert testing module for explicit pass/fail console output, with optional AssertException bypass",
   "main": "batch-assert.js",
   "scripts": {
