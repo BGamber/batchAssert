@@ -1,6 +1,6 @@
 # batchAssert
 Assert testing module for explicit pass/fail console output, with optional AssertionError bypass.
- * _Props to @SagePadawan for helping me out with this!_
+ * _Props to [@SagePadawan](https://github.com/SagePadawan) for helping me out with this!_
 
 ## What is batchAssert?
 #### batchAssert handles the execution of assert tests via deepEqual when provided an array of "test" objects:
