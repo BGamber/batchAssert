@@ -7,7 +7,7 @@ let assertTest = function ({ test, result, message }, index) {
     message === undefined) {
     throw MissingArgumentError;
   }
-  assert.deepEqual(test, result, message);
+  assert.deepStrictEqual(test, result, message);
   console.log(`Test ${index} passed.`);
 }
 
