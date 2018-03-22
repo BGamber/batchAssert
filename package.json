@@ -1,0 +1,25 @@
+{
+  "name": "batchassert",
+  "version": "1.0.0",
+  "description": "Assert testing module for explicit pass/fail console output, with optional AssertException bypass",
+  "main": "batchAssert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BGamber/batchAssert.git"
+  },
+  "keywords": [
+    "assert",
+    "batch",
+    "npm",
+    "module"
+  ],
+  "author": "Ben Gamber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BGamber/batchAssert/issues"
+  },
+  "homepage": "https://github.com/BGamber/batchAssert#readme"
+}
