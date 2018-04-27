@@ -2,7 +2,7 @@ const assert = require('assert');
 
 let MissingTestError = new Error("Test was not defined in test object");
 
-let assertTest = function ({ test="value", result, message }, index) {
+let assertTest = function ({ test="value", result, message, type }, index) {
     let testFunction;
     if (type === "value") {
         testFunction = assert.deepStrictEqual;
